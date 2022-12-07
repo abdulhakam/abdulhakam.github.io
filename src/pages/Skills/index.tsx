@@ -1,13 +1,13 @@
 import { Col, Row, Typography } from "antd";
 import React from "react"
 import Skill from "./Skill";
-import '../../assets/images/skills/HTML5_logo_and_wordmark.svg';
+// import '../../assets/images/skills/HTML5_logo_and_wordmark.svg';
 // import '../../assets/images/skills/CSS3_logo_and_wordmark.svg';
-import '../../assets/images/skills/JavaScript-logo.png';
-import '../../assets/images/skills/Typescript.svg';
-import '../../assets/images/skills/Bootstrap_logo.svg';
-import '../../assets/images/skills/material-ui-1.svg';
-import '../../assets/images/skills/reactjs.svg'
+// import '../../assets/images/skills/JavaScript-logo.png';
+// import '../../assets/images/skills/Typescript.svg';
+// import '../../assets/images/skills/Bootstrap_logo.svg';
+// import '../../assets/images/skills/material-ui-1.svg';
+// import '../../assets/images/skills/reactjs.svg'
 
 const Skills: React.FC = () => (
   <Row justify='space-around' align='middle' style={{height: '100vh',flexFlow: 'column'}}>
