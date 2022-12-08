@@ -18,7 +18,7 @@ const Projects: React.FC = () => (
       flexDirection: 'row',
       width: '100%',
     }}>
-      <Col span={6}><Typography.Title level={3}>Bites</Typography.Title></Col>
+      <Col span={6}><a href='#'><Typography.Title level={3}>Bites</Typography.Title></a></Col>
       <Col span={6}><Typography.Title level={3}>The Clone</Typography.Title></Col>
     </Row>
   </Row>
