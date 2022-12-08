@@ -4,6 +4,7 @@ import { ConfigProvider, Layout } from "antd";
 import customTheme from "./theme/customTheme";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HomePage key='home'/>
         <Skills />
         <Projects />
+        <About/>
       </Layout>
     </ConfigProvider>
   );
