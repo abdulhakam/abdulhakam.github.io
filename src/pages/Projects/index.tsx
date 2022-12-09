@@ -18,8 +18,8 @@ const Projects: React.FC = () => (
       flexDirection: 'row',
       width: '100%',
     }}>
-      <Col span={6}><a href='#'><Typography.Title level={3}>Bites</Typography.Title></a></Col>
-      <Col span={6}><Typography.Title level={3}>The Clone</Typography.Title></Col>
+      <Col span={6}><a href='https://abdul-hakam.web.app/projects/themealdb/'><Typography.Title level={3}>Bites</Typography.Title></a></Col>
+      <Col span={6}><a href='https://the-clone-tmdb.netlify.app/'><Typography.Title level={3}>The Clone</Typography.Title></a></Col>
     </Row>
   </Row>
 )
