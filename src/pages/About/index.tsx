@@ -23,8 +23,8 @@ const About: React.FC = () => (
     </Col>
     <Col span={12} style={{marginLeft: '3rem'}}>
       <Divider orientation='left'>I'm on:</Divider>
-      <Githublogo width={64} height={64} style={{filter:'invert(100%)',margin:'1rem'}}/>
-      <LinkedInlogo width={64} height={64} style={{margin:'1rem'}}/>
+      <a href='https://github.com/abdulhakam/'><Githublogo width={64} height={64} style={{filter:'invert(100%)',margin:'1rem'}}/></a>
+      <a href='https://www.linkedin.com/in/abdul-hakam-bhatti-a62634252/'><LinkedInlogo width={64} height={64} style={{margin:'1rem'}}/></a>
     </Col>
   </Row>
 )
