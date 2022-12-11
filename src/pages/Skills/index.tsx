@@ -9,7 +9,7 @@ import { ReactComponent as Muilogo } from '../../assets/images/mui.svg'
 import { ReactComponent as BS5logo} from '../../assets/images/bootstrap5.svg'
 
 const Skills: React.FC = () => (
-  <Row justify='space-around' align='middle' style={{height: '100vh',flexFlow: 'column'}}>
+  <Row justify='space-around' align='middle' style={{flexFlow: 'column'}}>
     <Col style={{width:'100%',}}><Typography.Title style={{display:'flex',justifyContent:'center'}} level={1}> My Skills </Typography.Title></Col>
     <Row justify='space-around'>
       <Typography.Title style={{display:'block',width:'100%'}} level={2}>Languages</Typography.Title>

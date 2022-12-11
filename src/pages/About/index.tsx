@@ -11,7 +11,7 @@ const aboutMe = {
   languages:'English, Urdu'}
 
 const About: React.FC = () => (
-  <Row style={{height: '100vh',marginRight: '2rem',marginLeft: '2rem'}}>
+  <Row style={{marginRight: '2rem',marginLeft: '2rem'}}>
     <Title style={{display:'flex',width: '100%',justifyContent:'center'}} level={1}>About Me</Title>
     <Col span={8}>
       <Divider orientation='left'>Name:</Divider>

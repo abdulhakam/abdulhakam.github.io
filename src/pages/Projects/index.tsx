@@ -6,7 +6,6 @@ const Projects: React.FC = () => (
   justify='center' 
   align='middle' 
   style={{
-    height:'100vh',
     alignItems: 'center',
     textAlign:'center',
     flexDirection:'column',
