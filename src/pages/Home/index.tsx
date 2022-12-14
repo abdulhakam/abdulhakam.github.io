@@ -7,11 +7,13 @@ const gradientText = {
   WebkitBackgroundClip:'text',
   color:'transparent',}
 
-const HomePage = () => (
+const HomePage: React.FC = () => (
       <Row 
         justify='center' 
         align='middle' 
         style={{
+          height: '100%',
+          justifyContent: 'center',
           alignItems: 'center',
           textAlign:'center',
           flexDirection:'column',

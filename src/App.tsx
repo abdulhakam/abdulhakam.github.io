@@ -1,6 +1,6 @@
 import HomePage from "./pages/Home";
 import "./App.css";
-import { ConfigProvider, Layout } from "antd";
+import { Col, ConfigProvider, Layout, Row } from "antd";
 import customTheme from "./theme/customTheme";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -12,14 +12,19 @@ function App() {
   return (
     <HashRouter>
       <ConfigProvider theme={customTheme()}>
-        <Layout style={{background:'black'}}>
-          <Navbar/>
-          <Routes>
-            <Route path='/' element={<HomePage key='home'/>}/>
-            <Route path='/skills' element={<Skills />}/>
-            <Route path='/projects' element={<Projects />}/>
-            <Route path='/about' element={<About/>}/>
-          </Routes>
+        <Layout>
+          <Row style={{height:'100vh'}}>
+            <Col span={2} style={{display:"flex",alignItems:'center'}}><Navbar/></Col>
+            <Col span={22}>
+                <Routes>
+                  <Route path='/' element={<HomePage key='home'/>}/>
+                  <Route path='/home' element={<HomePage/>} />
+                  <Route path='/skills' element={<Skills />}/>
+                  <Route path='/projects' element={<Projects />}/>
+                  <Route path='/about' element={<About/>}/>
+                </Routes>
+            </Col>
+          </Row>
         </Layout>
       </ConfigProvider>
     </HashRouter>
