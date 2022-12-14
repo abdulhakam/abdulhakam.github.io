@@ -14,7 +14,7 @@ function App() {
       <ConfigProvider theme={customTheme()}>
         <Layout>
           <Row style={{height:'100vh'}}>
-            <Col span={2} style={{display:"flex",alignItems:'center'}}><Navbar/></Col>
+            <Col span={2} style={{height:'100vh',display:"flex",alignItems:'center'}}><Navbar/></Col>
             <Col span={22}>
                 <Routes>
                   <Route path='/' element={<HomePage key='home'/>}/>

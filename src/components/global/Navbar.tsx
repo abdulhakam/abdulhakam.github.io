@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom';
-import { Button, MenuProps } from "antd";
+import { MenuProps } from "antd";
 import {Menu} from "antd";
-import { HomeOutlined, ContactsOutlined, ProjectOutlined, RadarChartOutlined, RightOutlined, LeftOutlined } from '@ant-design/icons';
+import { HomeOutlined, ContactsOutlined, ProjectOutlined, RadarChartOutlined } from '@ant-design/icons';
 
 
 const navItems: MenuProps['items'] = [
@@ -33,33 +33,20 @@ const Navbar: React.FC = () => {
   const [current,setCurrent] = useState('home');
   const navigate = useNavigate();
 
-  const [menuWidth, setMenuWidth] = useState('3rem');
-
-  const [collapsed, setCollapsed] = useState(true);
-  const toggleCollapsed = () => {
-    collapsed?setMenuWidth('8rem'):setMenuWidth('3rem');
-    setCollapsed(!collapsed);
-  };
-
   const onClick: MenuProps['onClick'] = (e) => {
     navigate(`/${e.key}`)
     setCurrent(e.key)
   };
 
   return (
-    <div>
-<Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 4 }}>
-    {collapsed ? <RightOutlined /> : <LeftOutlined />}
-</Button>
 <Menu 
-  style={{width:menuWidth,borderRadius:'12px'}}
+  style={{width:'3rem',borderRadius:'12px'}}
   onClick={onClick} 
   selectedKeys={[current]} 
   mode='inline' 
-  inlineCollapsed={collapsed}
+  inlineCollapsed={true}
   items={navItems}
 />
-</div>
 )}
 
 export default Navbar;
