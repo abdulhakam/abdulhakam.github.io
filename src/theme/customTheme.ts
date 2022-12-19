@@ -1,6 +1,6 @@
 import {theme} from "antd"
 
-const testTheme = {
+const dark = {
   token:{
     colorPrimary:'#dd4444',
     borderRadius:10,
@@ -9,6 +9,14 @@ const testTheme = {
   algorithm: theme.darkAlgorithm,                                  // defaultAlgorithm || darkAlgorithm || compactAlgorithm
 }
 
-export default function customTheme(themeName:String = "testTheme"){
-  return testTheme
+const light = {
+  token:{
+    colorPrimary:'#dd4444',
+    borderRadius:10,
+    motionUnit:0.05,
+  },
+  algorithm: theme.defaultAlgorithm,                                  // defaultAlgorithm || darkAlgorithm || compactAlgorithm
 }
+
+export function lightTheme(themeName:String = "light"){ return light }
+export function darkTheme(themeName:String = "dark"){ return dark }
