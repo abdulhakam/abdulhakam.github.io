@@ -1,32 +1,23 @@
 import { Switch } from "antd";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { handledarkMode } from "../../store/actions/darkModeAction";
+import { toggleTheme } from "../../redux/theme/themeSlice";
+
 
 const ThemeToggle = () => {
-  // assigning useDispatch hook of redux to a variable
-  const dispatch= useDispatch();
-  
-  // calling our state from the reduxer using useSelector hook of redux
-  const mode = useSelector((state:any) => state.darkMode);
+   // get theme from store
+   const theme = useSelector((state:any) => state.theme);
 
-  // destructuring isdarkMode state from mode variable called using useSelector hook of redux
-  const { isdarkMode } = mode;
-
-  // function to be fired on onChange method to switch the mode
-  function switchDarkMode() {
-    isdarkMode
-      ? dispatch(handledarkMode(false))
-      : dispatch(handledarkMode(true));
-  }
+   // initialize dispatch variable
+   const dispatch = useDispatch();
 
   return (
   <div>
     <Switch
     checkedChildren={"light"}
     unCheckedChildren={"dark"}
-    checked={isdarkMode}
-    onChange={switchDarkMode}
+    checked={theme.darkTheme}
+    onChange={() => dispatch(toggleTheme())}
     />
   </div>
   )
